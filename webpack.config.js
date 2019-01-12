@@ -17,6 +17,17 @@ module.exports = {
             loader: "html-loader"
           }
         ]
+      },
+      {
+         test:/\.(s*)css$/,
+         use:['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(png|jpeg|ttf|...)$/,
+        use: [
+         { loader: 'url-loader', options: { limit: 8192 } }
+         // limit => file.size =< 8192 bytes ? DataURI : File
+        ]
       }
     ]
   },

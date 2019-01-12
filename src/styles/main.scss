@@ -1,0 +1,233 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Thasadith|Questrial');
+html, body, .container, #root {
+  height: 100%;
+}
+body {
+  font-family: $font--base;
+  font-size: 24px;
+  color: $gray;
+  margin: 0;
+  background-color: $gray;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font--primary;
+  margin: 0;
+}
+h1 {
+  font-size: 220%;
+}
+p {
+  line-height: 1.5em;
+}
+$spacingUnits: (
+  1: $spacing--1,
+  2: $spacing--2,
+  3: $spacing--3,
+  4: $spacing--4,
+  5: $spacing--5,
+  6: $spacing--6,
+  7: $spacing--7,
+  8: $spacing--8,
+  9: $spacing--9,
+  10: $spacing--10
+);
+@each $unitName, $unitValue in $spacingUnits {
+  .u-P-T--#{$unitName} {
+    padding-top: $unitValue;
+  }
+  .u-P-R--#{$unitName} {
+    padding-right: $unitValue;
+  }
+  .u-P-B--#{$unitName} {
+    padding-bottom: $unitValue;
+  }
+  .u-P-L--#{$unitName} {
+    padding-left: $unitValue;
+  }
+  .u-P--#{$unitName} {
+    padding: $unitValue;
+  }
+  .u-M-T--#{$unitName} {
+    margin-top: $unitValue;
+  }
+  .u-M-R--#{$unitName} {
+    margin-right: $unitValue;
+  }
+  .u-M-B--#{$unitName} {
+    margin-bottom: $unitValue;
+  }
+  .u-M-L--#{$unitName} {
+    margin-left: $unitValue;
+  }
+  .u-M--#{$unitName} {
+    margin: $unitValue;
+  }
+}
+.u-NoMobileMargin {
+  @include bpMobileOnly() {
+    margin: 0;
+  }
+}
+.u-MobileFullWidth {
+  @include bpMobileOnly() {
+    width: 100%;
+    margin-bottom: $spacing--5;
+  }
+}
+.u-Flex {
+  display: flex;
+  flex-wrap: wrap;
+  @include bp($bp--md) {
+    flex-wrap: nowrap;
+  }
+}
+.u-HiddenDesktop {
+  display: block;
+  @include bp($bp--md) {
+    display: none;
+  }
+}
+.u-AlignItemsCenter {
+  align-items: center;
+}
+.u-JustifyContentCenter {
+  justify-content: center;
+}
+.u-Center {
+  text-align: center;
+}
+.u-Img {
+  width: 100%;
+  display: block;
+}
+.u-Col {
+  width: 100%;
+  box-sizing: border-box;
+  @include bp($bp--md) {
+    width: 50%;
+  }
+}
+.u-Button {
+  padding: $spacing--5;
+  background-color: $green-light;
+  color: $white;
+  text-decoration: none;
+  font-size: 200%;
+  display: block;
+  text-align: center;
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-100%);
+  z-index: 99;
+  transition: 1s;
+  padding: $spacing--5;
+  background: $white;
+  justify-content: space-between;
+  display: flex;
+  box-shadow: 1px 1px 10px $gray;
+  &--active {
+    transform: translateY(0);
+  }
+  &-navItem {
+    margin-right: $spacing--5;
+    text-decoration: none;
+    color: $gray;
+    transition: .5s;
+    &:hover,
+    &--active {
+      color: $green;
+    }
+  }
+}
+
+.Intro {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  &-hero {
+    background: url('../images/crossfit.jpg') top center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  &-tagline {
+    color: $white;
+    top: 20%;
+    left: 10%;
+    font-size: 300%;
+    position: absolute;
+    line-height: 1.3;
+  }
+  &-taglineHighlight {
+    background-color: rgba($yellow, .3);
+    padding: 0 $spacing--2;
+  }
+  &-more {
+    background-color: $white;
+    padding: $spacing--4;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    transition: 1s;
+    &--inactive {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.About {
+  background: $white;
+  &-gallery {
+    padding: $spacing--5 0;
+  }
+  &-galleryImg {
+    width: 50%;
+    &:first-child {
+      width: 100%;
+      display: block;
+    }
+    &:last-child {
+      display: none;
+    }
+    @include bp($bp--md) {
+      width: 25%;
+      &:first-child,
+      &:last-child {
+        width: 25%;
+        display: inline-block;
+      }
+    }
+  }
+  &-crossfit {
+    background: $black;
+    background-size: cover;
+    color: $white;
+    @include bp($bp--md) {
+      background: url('../images/crossfit.jpg') top center;
+      text-shadow: 1px 1px 5px #000;
+    }
+  }
+}
+
+.ForSale {
+  background: $white;
+}
+
+.Footer {
+  background: $brown-dark;
+  padding: $spacing--10;
+  color: $white;
+}
