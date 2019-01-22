@@ -23,9 +23,9 @@ module.exports = {
          use:['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(png|jpeg|ttf|...)$/,
+        test: /\.(png|jp(e*)g|ttf|svg|...)$/,
         use: [
-         { loader: 'url-loader', options: { limit: 8192 } }
+         { loader: 'url-loader', options: { limit: 8192, name: 'images/[hash]-[name].[ext]' } }
          // limit => file.size =< 8192 bytes ? DataURI : File
         ]
       }
