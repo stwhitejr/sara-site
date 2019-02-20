@@ -83,10 +83,10 @@ class Schedule extends Component {
         weekIndex: 3,
         events: [
           {
-            title: 'Yoga @ Blend Nutrition',
-            url: 'https://www.facebook.com/pages/category/Product-Service/Blend-Nutrition-454053478357513/',
-            urlText: 'Blend Nutrition',
-            startDate: '5:00 AM'
+            title: 'Yoga @ Open Doors Dorchester',
+            url: 'https://www.opendoorsyogastudios.com/dorchester',
+            urlText: 'Open Doors',
+            startDate: '6:00 AM'
           },
           {
             title: 'Yoga @ Blend Nutrition',
