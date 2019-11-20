@@ -51,42 +51,41 @@ class Schedule extends Component {
             startDate: '4:00 PM'
           },
           {
-            title: 'Yoga @ Chakra Power Yoga Hanover',
+            title: 'Yoga @ Chakra Power Yoga Braintree',
             url: 'http://www.chakrapoweryoga.com',
-            startDate: '6:30 PM'
-          }
-        ]
-      },
-      {
-        day: 'Tuesday',
-        weekIndex: 2,
-        events: [
-          {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '4:30 PM'
-          },
-          {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '5:45 PM'
-          },
-          {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
             startDate: '7:00 PM'
           }
         ]
       },
+      // {
+      //   day: 'Tuesday',
+      //   weekIndex: 2,
+      //   events: [
+      //     {
+      //       title: 'Crossfit @ Work Play Crossfit',
+      //       url: 'http://www.workplaycrossfit.com',
+      //       startDate: '4:30 PM'
+      //     },
+      //     {
+      //       title: 'Crossfit @ Work Play Crossfit',
+      //       url: 'http://www.workplaycrossfit.com',
+      //       startDate: '5:45 PM'
+      //     },
+      //     {
+      //       title: 'Crossfit @ Work Play Crossfit',
+      //       url: 'http://www.workplaycrossfit.com',
+      //       startDate: '7:00 PM'
+      //     }
+      //   ]
+      // },
       {
         day: 'Wednesday',
         weekIndex: 3,
         events: [
           {
-            title: 'Yoga @ Open Doors Dorchester',
-            url: 'https://www.opendoorsyogastudios.com/dorchester',
-            urlText: 'Open Doors',
-            startDate: '6:00 AM'
+            title: 'Yoga @ Chakra Power Yoga Braintree',
+            url: 'http://www.chakrapoweryoga.com',
+            startDate: '9:30 AM'
           },
           {
             title: 'Yoga @ Blend Nutrition',
@@ -100,21 +99,6 @@ class Schedule extends Component {
         day: 'Thursday',
         weekIndex: 4,
         events: [
-          {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '5:00 AM'
-          },
-          {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '6:00 AM'
-          },
-          {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '9:30 AM'
-          },
           {
             title: 'Yoga @ Chakra Power Yoga Hanover',
             url: 'http://www.chakrapoweryoga.com',
@@ -132,26 +116,16 @@ class Schedule extends Component {
         weekIndex: 5,
         events: [
           {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '9:30 AM'
-          },
-          {
             title: 'Yoga @ Open Doors Dorchester',
             url: 'https://www.opendoorsyogastudios.com/dorchester',
             urlText: 'Open Doors',
             startDate: '12:00 PM'
           },
           {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '4:30 PM'
+            title: 'Yoga @ Chakra Power Yoga Hanover',
+            url: 'http://www.chakrapoweryoga.com',
+            startDate: '5:30 PM'
           },
-          {
-            title: 'Crossfit @ Work Play Crossfit',
-            url: 'http://www.workplaycrossfit.com',
-            startDate: '5:45 PM'
-          }
         ]
       },
       {
@@ -162,12 +136,7 @@ class Schedule extends Component {
             title: 'Yoga @ Chakra Power Yoga Braintree',
             url: 'http://www.chakrapoweryoga.com',
             startDate: '9:30 AM'
-          },
-          {
-            title: 'Yoga @ The Center for Movement Weymouth',
-            url: 'http://www.thecenterformovementweymouth.com',
-            startDate: '10:30 AM'
-          },
+          }
         ]
       }
     ]
